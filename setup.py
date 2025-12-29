@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="neotec_fnb",
+    name="neotec_thunder_pos",
     version="0.3.0",
     description="Neotec Thunder POS for ERPNext v15+",
     author="Neotec",

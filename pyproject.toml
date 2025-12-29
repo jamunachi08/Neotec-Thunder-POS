@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "neotec_fnb"
+name = "neotec_thunder_pos"
 version = "0.3.0"
 description = "Neotec Thunder POS for ERPNext v15+ (Restaurant/Retail/Grocery, Tables/Floors, Split Bills, KDS, Web Ordering, Offers, Loyalty)"
 authors = [{ name = "Neotec", email = "support@neotec.ai" }]

@@ -1,4 +1,4 @@
-app_name = "neotec_fnb"
+app_name = "neotec_thunder_pos"
 app_title = "Neotec Thunder POS"
 app_publisher = "Neotec"
 app_description = "Thunder POS suite for ERPNext v15+ (Restaurant/Retail/Grocery, Tables, Split Bills, KDS, Web Ordering, Offers, Loyalty)"
