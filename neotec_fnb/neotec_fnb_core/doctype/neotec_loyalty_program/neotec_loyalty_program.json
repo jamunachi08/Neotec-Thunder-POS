@@ -1,0 +1,51 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Loyalty Program",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "program_name",
+      "fieldtype": "Data",
+      "label": "Program Name",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "earn_rate",
+      "fieldtype": "Float",
+      "label": "Earn Rate (points per 1 currency)",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "redeem_rate",
+      "fieldtype": "Float",
+      "label": "Redeem Rate (currency per 1 point)",
+      "default": 0.01,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "default": 1,
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

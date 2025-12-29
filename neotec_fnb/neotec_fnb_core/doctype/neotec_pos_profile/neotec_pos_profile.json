@@ -1,0 +1,71 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Profile",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "profile_name",
+      "fieldtype": "Data",
+      "label": "Profile Name",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "pos_mode",
+      "fieldtype": "Select",
+      "label": "POS Mode",
+      "options": "Restaurant\nRetail\nGrocery",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "show_item_images",
+      "fieldtype": "Check",
+      "label": "Show Item Images",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "show_categories",
+      "fieldtype": "Check",
+      "label": "Show Categories",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "allow_item_substitution",
+      "fieldtype": "Check",
+      "label": "Allow Item Substitution (Combo Offers)",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_barcode",
+      "fieldtype": "Check",
+      "label": "Enable Barcode Scanning",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_weight_items",
+      "fieldtype": "Check",
+      "label": "Enable Weight Items",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

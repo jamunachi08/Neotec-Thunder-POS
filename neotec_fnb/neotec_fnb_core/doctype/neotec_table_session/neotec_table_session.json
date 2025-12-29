@@ -1,0 +1,51 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Table Session",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "table",
+      "fieldtype": "Link",
+      "label": "Table",
+      "options": "Neotec Table",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nClosed\nMerged",
+      "default": "Open",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "opened_on",
+      "fieldtype": "Datetime",
+      "label": "Opened On",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "closed_on",
+      "fieldtype": "Datetime",
+      "label": "Closed On",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

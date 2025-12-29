@@ -1,0 +1,45 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Floor",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "floor_name",
+      "fieldtype": "Data",
+      "label": "Floor Name",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "outlet",
+      "fieldtype": "Link",
+      "label": "Outlet",
+      "options": "Neotec Outlet",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "drawing_json",
+      "fieldtype": "Code",
+      "label": "Floor Drawing JSON",
+      "options": "JSON",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

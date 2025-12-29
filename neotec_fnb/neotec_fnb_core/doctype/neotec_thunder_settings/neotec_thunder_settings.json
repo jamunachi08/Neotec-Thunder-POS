@@ -1,0 +1,94 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Thunder Settings",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "pos_mode",
+      "fieldtype": "Select",
+      "label": "Default POS Mode",
+      "options": "Restaurant\nRetail\nGrocery",
+      "default": "Restaurant",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_tables",
+      "fieldtype": "Check",
+      "label": "Enable Tables",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_kds",
+      "fieldtype": "Check",
+      "label": "Enable KDS",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_split_bills",
+      "fieldtype": "Check",
+      "label": "Enable Split Bills",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_loyalty",
+      "fieldtype": "Check",
+      "label": "Enable Loyalty",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_offers",
+      "fieldtype": "Check",
+      "label": "Enable Offers",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "enable_web_orders",
+      "fieldtype": "Check",
+      "label": "Enable Web Orders",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Default Company",
+      "options": "Company",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "default_warehouse",
+      "fieldtype": "Link",
+      "label": "Default Warehouse",
+      "options": "Warehouse",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "default_customer",
+      "fieldtype": "Link",
+      "label": "Default Customer",
+      "options": "Customer",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

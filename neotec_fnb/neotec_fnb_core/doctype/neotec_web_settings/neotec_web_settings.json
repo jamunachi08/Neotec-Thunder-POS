@@ -1,0 +1,51 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Web Settings",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "enabled",
+      "fieldtype": "Check",
+      "label": "Enable Web Ordering",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "site_name",
+      "fieldtype": "Data",
+      "label": "Website Name",
+      "default": "Neotec Ordering",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "default_profile",
+      "fieldtype": "Link",
+      "label": "Default POS Profile",
+      "options": "Neotec POS Profile",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "default_outlet",
+      "fieldtype": "Link",
+      "label": "Default Outlet",
+      "options": "Neotec Outlet",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

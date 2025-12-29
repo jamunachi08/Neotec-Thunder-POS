@@ -1,0 +1,43 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Web Menu Category",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "category_name",
+      "fieldtype": "Data",
+      "label": "Category Name",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "parent_category",
+      "fieldtype": "Link",
+      "label": "Parent Category",
+      "options": "Neotec Web Menu Category",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "image",
+      "fieldtype": "Attach Image",
+      "label": "Image",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

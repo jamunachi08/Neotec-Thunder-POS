@@ -1,0 +1,59 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Offer",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "offer_name",
+      "fieldtype": "Data",
+      "label": "Offer Name",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "offer_type",
+      "fieldtype": "Select",
+      "label": "Offer Type",
+      "options": "Combo\nDiscount\nBOGO",
+      "default": "Combo",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "allow_substitution",
+      "fieldtype": "Check",
+      "label": "Allow Item Substitution",
+      "default": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "rule_json",
+      "fieldtype": "Code",
+      "label": "Rule JSON",
+      "options": "JSON",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "default": 1,
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

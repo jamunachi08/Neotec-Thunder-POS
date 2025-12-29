@@ -1,0 +1,77 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Table",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "table_code",
+      "fieldtype": "Data",
+      "label": "Table Code",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "floor",
+      "fieldtype": "Link",
+      "label": "Floor",
+      "options": "Neotec Floor",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "capacity",
+      "fieldtype": "Int",
+      "label": "Capacity",
+      "default": 4,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "shape",
+      "fieldtype": "Select",
+      "label": "Shape",
+      "options": "Rectangle\nSquare\nCircle",
+      "default": "Rectangle",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "x",
+      "fieldtype": "Float",
+      "label": "X",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "y",
+      "fieldtype": "Float",
+      "label": "Y",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "w",
+      "fieldtype": "Float",
+      "label": "Width",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "h",
+      "fieldtype": "Float",
+      "label": "Height",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

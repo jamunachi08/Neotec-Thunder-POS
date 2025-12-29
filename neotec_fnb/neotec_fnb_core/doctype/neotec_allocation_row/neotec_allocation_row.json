@@ -1,0 +1,51 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Allocation Row",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "shared_allocation",
+      "fieldtype": "Link",
+      "label": "Shared Allocation",
+      "options": "Neotec Shared Allocation",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "target_check",
+      "fieldtype": "Link",
+      "label": "Target Check",
+      "options": "Neotec Check",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "percent",
+      "fieldtype": "Float",
+      "label": "Percent",
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}

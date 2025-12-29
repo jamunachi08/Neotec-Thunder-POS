@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include neotec_fnb *.json *.py *.html *.js *.css *.txt
+recursive-exclude neotec_fnb *.pyc
+recursive-exclude neotec_fnb __pycache__

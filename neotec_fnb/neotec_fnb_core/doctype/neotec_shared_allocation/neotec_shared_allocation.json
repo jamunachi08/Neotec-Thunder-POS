@@ -1,0 +1,39 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec Shared Allocation",
+  "module": "Neotec Fnb Core",
+  "custom": 0,
+  "istable": 0,
+  "is_submittable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "check_item",
+      "fieldtype": "Link",
+      "label": "Check Item",
+      "options": "Neotec Check Item",
+      "reqd": 1,
+      "doctype": "DocField"
+    },
+    {
+      "fieldname": "allocation_method",
+      "fieldtype": "Select",
+      "label": "Allocation Method",
+      "options": "By %\nBy Amount\nBy Qty",
+      "default": "By %",
+      "doctype": "DocField"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "doctype": "DocPerm"
+    }
+  ]
+}
