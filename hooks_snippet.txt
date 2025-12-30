@@ -1,0 +1,11 @@
+# Merge into neotec_thunder_pos/hooks.py
+
+pages = [
+    {"page": "thunder-pos-setup", "title": "Thunder POS Setup"}
+]
+
+# OPTIONAL (only if/when those records exist)
+# fixtures = [
+#   {"dt": "Module Def", "filters": [["name", "in", ["Neotec Fnb Core"]]]},
+#   {"dt": "Role", "filters": [["name", "in", ["Neotec POS Manager", "Neotec POS Cashier", "Neotec KDS User"]]]}
+# ]
